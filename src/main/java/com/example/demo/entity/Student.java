@@ -9,11 +9,11 @@ public class Student{
     public long getID(){
         return id;
     }
-    public void setId(Long id){
+    public void setId(Long id){ 
         this.id=id;
     }
 
-    public String getName(){
+    public String getName(){  
         return name;
     }
     public void setName(String name){
@@ -28,7 +28,9 @@ public class Student{
     public float cgpa(){
         return cgpa;
     }
-    public void setCgpa()
+    public void setCgpa(float cgpa){
+        this.cgpa=cgpa;
+    }
 
 
 }
