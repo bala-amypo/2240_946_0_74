@@ -31,22 +31,17 @@ public class Student{
     public void setEmail(String email){
         this.email=email;
     }
-    
-    public float cgpa(){
+
+    public float getCgpa(){
         return cgpa;
     }
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
     public Student (String name,String email,float cgpa){
-        // this.id=id;
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
     }
-    public Student(){
-        
-    }
-
-
+    public Student(){}
 }
