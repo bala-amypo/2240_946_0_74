@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 @Entity 
 public class Student{
     @Id 
-    @GeneratedValue(strategy=)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String name;
     private String email;
@@ -37,7 +37,7 @@ public class Student{
         this.cgpa=cgpa;
     }
     public Student (Long id,String name,String email,float cgpa){
-        this.id=id;
+        // this.id=id;
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
