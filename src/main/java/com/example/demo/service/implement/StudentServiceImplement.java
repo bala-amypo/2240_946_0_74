@@ -1,6 +1,6 @@
 package com.example.demo.service.implement;
 
-import java.util.List;
+import java.util.*;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +22,11 @@ public class StudentServiceImplement implements StudentService{
     @Override
     public List<Student>fetchRecord(){
         return sturep.findAll();
+    }
+
+    @Override
+    public Optional<Student>fetchDataById(int id)
+    {
+        return sturep.findById(id);
     }
 }

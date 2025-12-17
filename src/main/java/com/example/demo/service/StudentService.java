@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import java.util.List;
+import java.util.*;
 
 import com.example.demo.entity.Student;
 
@@ -8,4 +8,5 @@ import com.example.demo.entity.Student;
 public interface StudentService{
     Student createData(Student stu);
     List<Student>fetchRecord();
+    Optional<Student>fetchDataById(int id);
 }
