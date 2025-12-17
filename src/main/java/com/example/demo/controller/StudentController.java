@@ -16,7 +16,7 @@ public class StudentController{
 
     @PostMapping("/adddata")
     public Student createData(@RequestBody Student stu){
-        return ser.createData;
+        return ser.createData(stu);
     }
     @GetMapping("/fetchdata")
     public List<Student>fetchRecord(){
