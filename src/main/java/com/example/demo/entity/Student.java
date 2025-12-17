@@ -39,7 +39,7 @@ public class Student{
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
-    public Student (Long id,String name,String email,float cgpa){
+    public Student (String name,String email,float cgpa){
         // this.id=id;
         this.name=name;
         this.email=email;
