@@ -27,7 +27,7 @@ public class Student{
     public void setName(String name){
         this.name=name;
     }
-    public String getemail(){
+    public String getEmail(){
         return email;
     }
     public void setEmail(String email){
