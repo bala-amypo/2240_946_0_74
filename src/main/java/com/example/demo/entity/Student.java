@@ -1,7 +1,16 @@
 package com.example.demo.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import jakarta.persistence.*;
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity 
 public class Student{
     @Id 
@@ -10,38 +19,4 @@ public class Student{
     private String name;
     private String email;
     private float cgpa;
-
-    public int getID(){
-        return id;
-    }
-    public void setId(int id){ 
-        this.id=id;
-    }
-
-    public String getName(){  
-        return name;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
-
-    public String getEmail(){
-        return email;
-    }
-    public void setEmail(String email){
-        this.email=email;
-    }
-
-    public float getCgpa(){
-        return cgpa;
-    }
-    public void setCgpa(float cgpa){
-        this.cgpa=cgpa;
-    }
-    public Student (String name,String email,float cgpa){
-        this.name=name;
-        this.email=email;
-        this.cgpa=cgpa;
-    }
-    public Student(){}
 }
