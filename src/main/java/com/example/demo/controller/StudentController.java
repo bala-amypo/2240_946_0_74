@@ -27,15 +27,4 @@ public class StudentController{
     {
         return ser.fetchDataById(id);
     }
-    @PutMapping("/updatebyid/{id}")
-    public String updateDataById(@PathVariable int id,@RequestBody Student stu){
-        Optional<Student> student = ser.fetchDataById(id);
-        if(student.isPresent()){
-            stu.setId(id);
-            ser.createData(stu);
-            return "Updated successfully";
-        }else{
-            return id + "not found";
-        }
-    }
 }
